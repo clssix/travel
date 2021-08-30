@@ -1,0 +1,322 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+// banner
+.banner{
+    width: 100%;
+
+    .carousel{
+        width: 100%;
+        
+        .carousel-inner{
+            width: 100%;
+            position: relative;
+
+            .item{
+
+                .back{
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .info{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: rgba(0,0,0,.3);
+                    padding: 12em 0em 3em;
+
+                    .title{
+                        color: #fff;
+                        font-size: 2em;
+                        font-family: CguyinhksBold;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: .5em;
+                    }
+                    .text{
+                        font-size: 1em;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+
+            }
+        }
+    }
+    @media screen and (max-width:350px){
+        &{
+            .carousel{
+                .carousel-inner{
+                    .item{
+                        .info{
+                            padding: 11em 0em 3em;
+
+                            .title{
+                                font-size: 1.8em;
+                                margin-bottom: 0;
+                            }
+
+                            .text{
+                                font-size: .9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// more
+.more{
+    width: 100%;
+    background: #fff;
+
+    .container{
+        width: 95%;
+        padding: 2em 0em 1em;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .item{
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+
+            .back{
+                width: 35%;
+                margin: 0 auto;
+                margin-bottom: .5em;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .info{
+                font-size: 1.2em;
+                color: #000;
+            }
+        }
+    }
+
+    @media screen and (max-width:350px){
+        &{
+            .container{
+                .item{
+                    .back{
+                        width: 30%;
+                    }
+                    .info{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// discount
+.discount{
+    width: 100%;
+    padding: 1em 0em;
+
+    .container{
+        width: 95%;
+        margin: 0 auto;
+
+        .drag-box{
+            width: auto;
+            overflow-x: hidden;
+
+            .drag-x{
+                width: auto;
+                display: flex;
+                justify-content: space-around;
+                white-space: nowrap;
+
+                .item{
+                    width: 100%;
+                    display: inline-block;
+                    margin-left: 1em;
+                    background: #fff;
+                    border-radius: 5px;
+                    &:first-child{
+                        margin-left: 20em;
+                    }
+
+                    .box{
+                        width: 100%;
+                        height: 5em;
+                        padding: 0em .3em;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .info{
+                            width: 70%;
+                            .theme{
+                                font-size: .8em;
+                                color: #666;
+                                margin-top: .4em;
+                            }
+
+                            .title{
+                                color: #000;
+                                font-size: 1em;
+                                white-space: nowrap;
+                                overflow-x: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            .text{
+                                color: #666;
+                                font-size: .8em;
+                                white-space: nowrap;
+                                overflow-x: hidden;
+                                text-overflow: ellipsis;
+                                margin-top: .4em;
+                            }
+                        }
+
+                        .back{
+                            width: 35%;
+                            height: 3.5em;
+                            margin-top: .8em;
+                            border-radius: 5px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:350px){
+        &{
+            .container{
+                .drag-box{
+                    .drag-x{
+                        .item{
+                            &:first-child{
+                                margin-left: 24em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// recommend
+.recommend{
+    width: 100%;
+    background: #fff;
+
+    .container{
+        padding: 1em 0em;
+        width: 90%;
+        margin: 0 auto;
+
+        .title{
+            font-size: 1.4em;
+            color: #000;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 1em;
+        }
+
+        .item{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6em;
+
+            .box{
+                width: 58%;
+
+                .info{
+                    display: inline-block;
+                    color: #000;
+                    margin-top: .5em;
+
+                    .theme{
+                        font-size: 1.1em;
+                        margin-bottom: .5em;
+                        line-height: 1.5em;
+
+                        span{
+                            padding: 0em .3em;
+                        }
+                    }
+                }
+
+                .label{
+                    width: 100%;
+                    padding: 0;
+                    margin-top: 2em;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a{
+                        display: inline-block;
+                        width: 25%;
+                        text-align: left;
+                        font-size: 1.2em;
+                        color: #fff;
+                        background: #42c5b5;
+                        border-radius: 20px;
+                        text-align: center;
+                        padding: .5em 0em;
+                    }
+
+                    .time{
+                        width: 50%;
+                        text-align: right;
+                        font-size: 1.1em;
+                        color: #666;
+                        padding-top: .5em;
+                    }
+                }
+            }
+
+            .back{
+                width: 40%;
+                border-radius: 10px;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:350px){
+        &{
+            .container{
+                .title{
+                    font-size: 1.2em;
+                }
+                .item{
+                    .box{
+                        .label{
+                            margin-top: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

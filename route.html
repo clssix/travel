@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫途鹰</title>
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet/less" href="./assets/css/reset.less" />
+    <link rel="stylesheet/less" href="./assets/css/common.less" />
+    <link rel="stylesheet/less" href="./assets/css/route.less" />
+</head>
+<body>
+    <header class="headers">
+        <div class="container">
+            <a href="javascript:void(0)" class="left glyphicon glyphicon-menu-left"></a>
+            <p class="title">我的旅行</p>
+            <a href="javascript:void(0)" class="right glyphicon glyphicon-option-horizontal"></a>
+        </div>
+    </header>
+
+    <!-- option -->
+    <div class="option" id="option">
+        <div id="tabs">
+            <div class="nav active">行程</div>
+            <div class="nav">足迹</div>
+        </div>
+
+        <div id="content">
+            <div class="block active">
+                <div class="trip">
+                    <div class="back">
+                        <img class="img-responsive" src="./assets/images/heart.png" />
+                    </div>
+                    <div class="info">
+                        <h4 class="title">您还未收藏任何内容</h4>
+                        <p class="text">
+                            在猫途鹰探索发现有趣的旅行地点，点击收藏添加至相关行程。
+                            您可在地图中浏览全部收藏的地点，也可在其它设备中随时查看。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="footprint">
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/footprint-img1.png" />
+                        </div>
+                        <div class="info">
+                            <h4 class="title">Tulemar Bungalows & Villas</h4>
+                            <p class="comment"><span>.....</span>2,808条点评</p>
+                            <p class="text">哥斯达黎加安东尼奥国家公园，蓬塔</p>
+                            <p class="place">雷纳斯省</p>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/footprint-img2.png" />
+                        </div>
+                        <div class="info">
+                            <h4 class="title">Tulemar Bungalows & Villas</h4>
+                            <p class="comment"><span>.....</span>2,808条点评</p>
+                            <p class="text">哥斯达黎加安东尼奥国家公园，蓬塔</p>
+                            <p class="place">雷纳斯省</p>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/footprint-img3.png" />
+                        </div>
+                        <div class="info">
+                            <h4 class="title">Tulemar Bungalows & Villas</h4>
+                            <p class="comment"><span>.....</span>2,808条点评</p>
+                            <p class="text">哥斯达黎加安东尼奥国家公园，蓬塔</p>
+                            <p class="place">雷纳斯省</p>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0)" class="item">
+                        <div class="back">
+                            <img class="img-responsive" src="./assets/images/footprint-img4.png" />
+                        </div>
+                        <div class="info">
+                            <h4 class="title">Tulemar Bungalows & Villas</h4>
+                            <p class="comment"><span>.....</span>2,808条点评</p>
+                            <p class="text">哥斯达黎加安东尼奥国家公园，蓬塔</p>
+                            <p class="place">雷纳斯省</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="item">
+                <p class="glyphicon glyphicon-home"></p>
+                <p class="theme">首页</p>
+            </a>
+
+            <a href="./find.html" class="item">
+                <p class="glyphicon glyphicon-globe"></p>
+                <p class="theme">发现</p>
+            </a>
+
+            <a href="./route.html" class="item active">
+                <p class="glyphicon glyphicon-lock"></p>
+                <p class="theme">旅行箱</p>
+            </a>
+
+            <a href="./found.html" class="item">
+                <p class="glyphicon glyphicon-folder-open"></p>
+                <p class="theme">创建</p>
+            </a>
+
+            <a href="./my.html" class="item">
+                <p class="glyphicon glyphicon-user"></p>
+                <p class="theme">我的</p>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script src="./assets/js/less.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/wow.min.repeat.js"></script>
+<!-- 移动端块元素的拖拽事件插件 -->
+<script src="./assets/js/jquery.dragscroll.js"></script>
+<script>
+    var tabs = document.getElementById('tabs')
+    var box = document.getElementById('box')
+    var navlist = document.getElementsByClassName('nav')
+    var blocklist = document.getElementsByClassName('block')
+
+    var index = 0
+    
+    for (var i=0;i<navlist.length;i++){
+        navlist[i].dataset.index = i
+    }
+
+    tabs.onclick = function(e){
+        index=e.target.dataset.index
+
+        for (var i=0;i<navlist.length;i++){
+            navlist[i].className = 'nav'
+            blocklist[i].className = 'block'
+        }
+
+        navlist[index].className = 'nav active'
+        
+        blocklist[index].className = 'block active'
+    }
+</script>

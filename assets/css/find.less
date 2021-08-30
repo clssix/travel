@@ -1,0 +1,241 @@
+body{
+    background: #fff;
+}
+
+// hot
+.hot{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 10em;
+
+    .title{
+        font-size: 1.2em;
+        margin-left: 1em;
+        padding-top: 2em;
+        color: #000;
+        font-weight: bold;
+    }
+
+    #tabs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0em .5em;
+
+        .nav{
+            width: 20%;
+            font-size: .9em;
+            line-height: 3em;
+            text-align: center;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .active{
+            color: #5fc0b4;
+        }
+    }
+
+    #content{
+        width: 92%;
+        margin: 0 auto;
+        position: relative;
+        background: #fff;
+
+        .block{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            background: #fff;
+
+            .list{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .item{
+                    width: 23%;
+                    margin-bottom: 1em;
+
+                    .img{
+                        width: 100%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .theme{
+                        text-align: left;
+                        color: #000;
+                        font-size: .9em;
+                        margin-top: .5em;
+                    }
+                }
+            }
+        }
+
+        .active{
+            opacity: 1;
+        }
+    }
+}
+
+// traveler
+.traveler{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 7em;
+
+    .title{
+        font-size: 1.2em;
+        margin-left: 1em;
+        padding-top: 2em;
+        color: #000;
+        font-weight: bold;
+    }
+
+    #traveler-tabs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0em .5em;
+
+        .traveler-nav{
+            width: 20%;
+            font-size: .9em;
+            line-height: 3em;
+            text-align: center;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .active{
+            color: #5fc0b4;
+        }
+    }
+
+    #traveler-content{
+        width: 92%;
+        margin: 0 auto;
+        position: relative;
+        background: #fff;
+
+        .traveler-block{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            background: #fff;
+
+            .list{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .item{
+                    width: 23%;
+                    margin-bottom: 1em;
+
+                    .img{
+                        width: 100%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .active{
+            opacity: 1;
+        }
+    }
+}
+
+// model
+.model{
+    width: 100%;
+    background: #fff;
+
+    .title{
+        font-size: 1.2em;
+        margin-left: 1em;
+        padding-top: 2em;
+        color: #000;
+        font-weight: bold;
+    }
+
+    #model-tabs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0em .5em;
+
+        .model-nav{
+            width: 20%;
+            font-size: .9em;
+            line-height: 3em;
+            text-align: center;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .active{
+            color: #5fc0b4;
+        }
+    }
+
+    #model-content{
+        width: 92%;
+        margin: 0 auto;
+        position: relative;
+        background: #fff;
+
+        .model-block{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            background: #fff;
+
+            .list{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .item{
+                    width: 23%;
+                    margin-bottom: 1em;
+
+                    .img{
+                        width: 100%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .theme{
+                        text-align: left;
+                        color: #000;
+                        font-size: .9em;
+                        margin-top: .5em;
+                    }
+                    &:last-child{
+                        margin-bottom: 6em;
+                    }
+                }
+            }
+        }
+
+        .active{
+            opacity: 1;
+        }
+    }
+}
